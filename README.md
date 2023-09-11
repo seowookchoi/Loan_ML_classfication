@@ -39,7 +39,7 @@ As the target variable for the modeling is "Loan Status", we need to examine thi
 ![Alternative text describing the image](loan_given.png)
 
 Soft impute is used to address missing values. Additionally, outliers were removed and the data was winsorized. For instance, in the credit score feature, some data had four-digit scores instead of the typical three-digit scores. These discrepancies were corrected before modeling. Below is a histogram illustrating the credit score distribution after cleaning. There's a peak at one point, representing the default credit score. Such a distribution is expected.
-![Alternative text describing the image](Credit_score_histo_loan.png)
+![Alternative text describing the image](Credit_score_histo.png)
 
 ### 4. Modelling and Evaluation
 

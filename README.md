@@ -42,7 +42,7 @@ Soft impute is used for missing values. Also, there was outlier removal and wins
 For example, credit score feature, some of data has four digit score rather than 3 digit scores.
 Those data is issue is fixed before the modeling. This is the example histogram for credit score after cleaing.
 There is pick at one point for credit score which is default credit score and it is natural to have distribution like this.
-![Alternative text describing the image](relative/path/to/img.jpg)
+![Alternative text describing the image](loan_given.png)
 
 ### 4. Modelling and Evaluation
 

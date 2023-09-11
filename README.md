@@ -36,7 +36,7 @@ In this project, our goal is to create a classification model to decide if a loa
 
 ### 3. Data Prep and EDA
 As the target variable for the modeling is "Loan Status", we need to examine this feature closely. Since this feature is binary, the modeling problem will be a classification task. The data is not balanced, though it's not severely imbalanced either. In subsequent sections, we will work with the raw imbalanced data and also explore resampling methods to achieve balance.
-![Alternative text describing the image](relative/path/to/img.jpg)
+![Alternative text describing the image](loan_given.png)
 
 Soft impute is used for missing values. Also, there was outlier removal and winsorizing.
 For example, credit score feature, some of data has four digit score rather than 3 digit scores.

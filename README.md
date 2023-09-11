@@ -38,11 +38,8 @@ In this project, our goal is to create a classification model to decide if a loa
 As the target variable for the modeling is "Loan Status", we need to examine this feature closely. Since this feature is binary, the modeling problem will be a classification task. The data is not balanced, though it's not severely imbalanced either. In subsequent sections, we will work with the raw imbalanced data and also explore resampling methods to achieve balance.
 ![Alternative text describing the image](loan_given.png)
 
-Soft impute is used for missing values. Also, there was outlier removal and winsorizing.
-For example, credit score feature, some of data has four digit score rather than 3 digit scores.
-Those data is issue is fixed before the modeling. This is the example histogram for credit score after cleaing.
-There is pick at one point for credit score which is default credit score and it is natural to have distribution like this.
-![Alternative text describing the image](loan_given.png)
+Soft impute is used to address missing values. Additionally, outliers were removed and the data was winsorized. For instance, in the credit score feature, some data had four-digit scores instead of the typical three-digit scores. These discrepancies were corrected before modeling. Below is a histogram illustrating the credit score distribution after cleaning. There's a peak at one point, representing the default credit score. Such a distribution is expected.
+![Alternative text describing the image](credit_score_histo.png)
 
 ### 4. Modelling and Evaluation
 

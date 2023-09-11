@@ -41,52 +41,19 @@ As the target variable for the modeling is "Loan Status", we need to examine thi
 Soft impute is used to address missing values. Additionally, outliers were removed and the data was winsorized. For instance, in the credit score feature, some data had four-digit scores instead of the typical three-digit scores. These discrepancies were corrected before modeling. Below is a histogram illustrating the credit score distribution after cleaning. There's a peak at one point, representing the default credit score. Such a distribution is expected.
 ![Alternative text describing the image](Credit_score_histo.png)
 
-### 4. Modelling and Evaluation
+### 4. Modeling and Evaluation
 
+Here is a feature importance plot that illustrates which features contribute to the prediction, ranked by importance. The loan amount emerges as the most significant predictor. Intuitively, this aligns with the notion that securing a loan becomes more challenging as the amount increases. You can examine the plot further to understand how other features impact the model.
+![Alternative text describing the image](Feature_importance_loan.png)
 ### 5. Results
-Open the Command Prompt by pressing Win + R, typing "cmd", and pressing Enter.
 
-Change the directory to the desired location for your project:
+The results from the test dataset with imbalanced data indicate that boosting-based methods (specifically, Gradient Boosting and XGBoost) outperform both Random Forest and Logistic Regression. While XGBoost is an advanced version of Gradient Boosting with added regularization, the outcomes for both XGBoost and Gradient Boosting were similar.
+![Alternative text describing the image](ROC_non_balanced.png)
 
-`cd C:\path\to\project`
-
-Create a new virtual environment using the Python Launcher:
-
-`py -3.8 -m venv myenv`
-
-Note: Replace myenv with your desired virtual environment name.
-
-Activate the virtual environment:
-
-`myenv\Scripts\activate`
-
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
+From the results using a balanced test dataset, boosting-based methods (such as Gradient Boosting and XGBoost) and logistic regression outperform Random Forest. This can be attributed to the fact that logistic regression models tend to be conservative, leaning more towards identifying outcomes as denials.
+![Alternative text describing the image](ROC_non_balanced.png)
 
 
-For Linux/Mac:
-
-Open a terminal.
-
-Change the directory to the desired location for your project:
-
-`cd /path/to/project`
-
-Create a new virtual environment using the Python Launcher:
-
-`python3.8 -m venv myenv`
-Note: Replace myenv with your desired virtual environment name.
-
-Activate the virtual environment:
-
-`source myenv/bin/activate`
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
-
-
-By specifying the version using py -3.8 or python3.8, you can ensure that the virtual environment is created using Python 3.8.10 specifically, even if you have other Python versions installed.
-
+In summarizing all the results, Gradient Boosting and XGBoost prove to be the most effective. For now, Gradient Boosting will be our choice since it's a lighter model, allowing for quicker execution with reduced memory usage. I've created a .pkl file to facilitate the model's deployment in the actual application. The deployment process will be continued in a subsequent project."
 
 

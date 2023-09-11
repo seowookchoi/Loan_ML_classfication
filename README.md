@@ -9,7 +9,7 @@
 
 Stock Yards Bank & Trust, currently handles loan applications through manual processes. Due to the subjective nature of loan approvals and the influx of applications, making decisions has become challenging. To streamline this, they aim to develop an automated machine learning system to assess various criteria and determine loan approval.
 
-In this project, our goal is to create a classification model to decide if a loan should be granted. We'll consider several factors, such as the applicant's credit rating and previous loan history, to predict their eligibility. Data cleaning will be essential, filling gaps and ensuring the model's reliability. The end result will provide a probability score, indicating either "Loan Approved" or "Loan Denied" based on the model's analysis. Code for the projects is in "SW_pred.ipynb"
+In this project, the goal is to create a classification model to decide if a loan should be granted. We'll consider several factors, such as the applicant's credit rating and previous loan history, to predict their eligibility. Data cleaning will be essential, filling gaps and ensuring the model's reliability. The end result will provide a probability score, indicating either "Loan Approved" or "Loan Denied" based on the model's analysis. Code for the projects is in "SW_pred.ipynb"
 
 
 
@@ -39,7 +39,7 @@ As the target variable for the modeling is "Loan Status", we need to examine thi
 ![Alternative text describing the image](loan_given.png)
 
 Soft impute is used to address missing values. Additionally, outliers were removed and the data was winsorized. For instance, in the credit score feature, some data had four-digit scores instead of the typical three-digit scores. These discrepancies were corrected before modeling. Below is a histogram illustrating the credit score distribution after cleaning. There's a peak at one point, representing the default credit score. Such a distribution is expected.
-![Alternative text describing the image](credit_score_histo.png)
+![Alternative text describing the image](Credit_score_histo_loan.png)
 
 ### 4. Modelling and Evaluation
 
